@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-@app.get('/id')
+@app.get('/user')
 async def id_page(username: str, age: int) -> dict:
     return {'message': f'Информация о пользователе. Имя: {username}, Возраст: {age}'}
 
